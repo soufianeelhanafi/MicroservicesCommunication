@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ThirdServiceController {
 	
 @GetMapping("/pingService3")
-public String getPingService1 ()
+public String getPingService ()
 {
 	return "this is Service 3" ; 
 }

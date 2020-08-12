@@ -34,5 +34,6 @@
 		<module>service1</module> 
 		<module>service2</module>
 		<module>service3</module>
+		<module>service-discovery-eureka</module>
 	</modules>
 </project>
