@@ -1,0 +1,39 @@
+server:  
+  port: ${PORT:8010}
+
+logging:
+  level:
+   org.springframework:  debug
+
+spring:
+  application:
+    name: zuul
+
+eureka:
+ client:
+   serviceUrl:
+     defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
+   registerWithEureka : false
+  
+
+zuul:
+ routes:
+  service1:
+   path: /service1/**
+   serviceId: service1
+  service2 :
+   path: /service2/**
+   serviceId: service2
+  service-number-3: 
+   path: /service3/**
+   serviceId: service3
+   
+management:
+ endpoints:
+  web: 
+   exposure:
+    include: routes , filters
+   base-path: /
+
+
+
