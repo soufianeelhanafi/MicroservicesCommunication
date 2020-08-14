@@ -30,7 +30,7 @@ public class FirstServiceController {
 		result+= "  " ; 
 
 
-		result += service3.service3Call() ;
+		//result += service3.service3Call() ;
 
 		return result ; 
 	}
